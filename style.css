@@ -62,9 +62,10 @@ body * {
   position: relative;
   width: 64px;
   margin: 4px auto;
- }
+}
 
-#switch button { /*Lua ou Sol*/
+#switch button {
+  /*Lua ou Sol*/
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
@@ -73,18 +74,18 @@ body * {
 
   /*Posicionamento do button e do track*/
   position: absolute;
-  left:0;
-  z-index:1;
+  left: 0;
+  z-index: 1;
   transform: translateY(-50%);
   top: 50%;
-  
 }
 .light #switch button {
   right: 0;
   left: initial;
 }
 
-#switch span { /*Track*/
+#switch span {
+  /*Track*/
   display: block;
   width: 64px;
   height: 24px;
@@ -153,4 +154,15 @@ ul li a:hover {
 footer {
   padding: 24px 0;
   text-align: center;
+  font-size: 14px;
+}
+
+/* Media quires */
+@media (min-windth: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
